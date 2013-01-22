@@ -12,7 +12,14 @@
       <textarea name="tweet[text]"></textarea>
     </p>
 		<p>
-			<input type="textfield" name="tweet[category]" value="Choose category"/>	
+			<input type="text" name="tweet[category]"/>	
+		</p>
+		<p>
+			<select name="tweet[select_category]" value="Choose category">
+				<% for category in @categories %>
+					<option value="category"><%= category %></option>
+				<% end %>
+			</select>
 		</p>
     <p>
       <input type="submit" value="Update your status" />
