@@ -11,6 +11,9 @@
     <p>
       <textarea name="tweet[text]"></textarea>
     </p>
+		<p>
+			<input type="textfield" name="tweet[category]" value="Choose category"/>	
+		</p>
     <p>
       <input type="submit" value="Update your status" />
     </p>
